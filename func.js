@@ -5,9 +5,7 @@ var old;
 var tag;
 
 function main(id) {
-	//		setTimeout(function(){
-	//			alert('开始！请准确右击要获取的信息');
-	//		})
+	
 	if(id=='g'){
 		getNewInfo();
 	}
