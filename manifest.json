@@ -1,0 +1,22 @@
+{
+	"name": "微博发现排序",
+	"version": "1.0",
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*"
+	],
+	"content_scripts": [
+	    {
+	    "matches": ["https://d.weibo.com/*"],
+	    "js":["jquery-2.0.2.min.js"]
+	    }
+	  ],
+	"browser_action": {
+		"default_title": "微博发现排序",
+		"default_icon": "icon.png",
+		"default_popup": "popup.html"
+	},
+	"background": {
+    	"page": "background.html"
+  	},
+	"manifest_version": 2
+}
